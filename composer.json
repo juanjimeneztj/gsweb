@@ -1,0 +1,13 @@
+{
+    "name": "juanjimeneztj/gsweb",
+    "description": "Personalized Styles for SIP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Jimenez",
+            "email": "juanjimeneztj@gmail.com"
+        }
+    ],
+    "require": {}
+}
