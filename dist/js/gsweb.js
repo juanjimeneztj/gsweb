@@ -1,13 +1,10 @@
-$(document).ready(function(){ 
-    $("button.btn").prop('disabled', true);  
-    $(".sms-check input[type=checkbox]").click(function() {  
-        if($(".check").is(':checked')) { 
-            
-            $('button.btn').removeClass('sms-disabled'); 
-            $("button.btn").prop('disabled', false);                         
-        } else {  
-            $('button.btn').addClass('sms-disabled'); 
-            $("button.btn").prop('disabled', true); 
-        }  
-    });  
+// Function to disable button in the SMS forms
+$("body").on('click','.sms-check-checkbox', function() {  
+    if($('.sms-check-checkbox').prop('checked')) { 
+        $(this).parent().parent().find('button.btn').removeClass('sms-disabled'); 
+        $(this).parent().parent().find('button.btn').prop('disabled', false);                         
+    } else {  
+        $(this).parent().parent().find('button.btn').addClass('sms-disabled'); 
+        $(this).parent().parent().find('button.btn').prop('disabled', true); 
+    }  
 });  
