@@ -6,17 +6,18 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2016 Juan jimenez
 */
-.bold,strong {
+.bold,
+strong {
     font-weight: 700
 }
 
-img{max-width: 100%}
-
-.subr,u {
+.subr,
+u {
     text-decoration: underline
 }
 
-.italic,em {
+.italic,
+em {
     font-style: italic
 }
 
@@ -34,6 +35,7 @@ img{max-width: 100%}
 
 .text-justify {
     text-align: justify;
+
     @media all and (max-width:991px) {
         text-align: left
     }
@@ -48,7 +50,8 @@ img{max-width: 100%}
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    & > img {
+
+    &>img {
         height: auto;
         max-width: 100%
     }
@@ -58,4 +61,37 @@ img{max-width: 100%}
     .empty {
         display: none !important
     }
+}
+
+.sms-check-label {
+    width: 100%;
+    margin-bottom: 15px !important;
+    display: inline-block;
+    padding-left: 35px;
+    text-indent: -25px;
+    font-size: 13px;
+    height: auto;
+    box-sizing: border-box;
+    text-align: left !important;
+    box-shadow: none !important;
+    background: none !important;
+    border: none !important;
+}
+
+.sms-check-checkbox[type=checkbox] {
+    width: 18px !important;
+    height: 18px !important;
+    padding: 0;
+    margin: 0px 5px 0 0;
+    vertical-align: bottom;
+    position: relative;
+    top: 8px;
+    *overflow: hidden;
+}
+
+.sms-disabled,
+.sms-disabled:hover {
+    background-color: #ccc !important;
+    color: #000 !important;
+    cursor: not-allowed !important;
 }
