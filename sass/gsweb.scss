@@ -6,18 +6,15 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2016 Juan jimenez
 */
-.bold,
-strong {
+.bold,strong {
     font-weight: 700
 }
 
-.subr,
-u {
+.subr,u {
     text-decoration: underline
 }
 
-.italic,
-em {
+.italic,em {
     font-style: italic
 }
 
@@ -34,24 +31,29 @@ em {
 }
 
 .text-justify {
-    text-align: justify
+    text-align: justify;
+    @media all and (max-width:991px) {
+        text-align: left
+    }
 }
 
 .clear {
     clear: both
 }
 
-img {
-    height: auto;
-    max-width: 100%
+.img {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    & > img {
+        height: auto;
+        max-width: 100%
+    }
 }
 
 @media all and (max-width:991px) {
     .empty {
         display: none !important
-    }
-
-    .text-justify {
-        text-align: left
     }
 }
