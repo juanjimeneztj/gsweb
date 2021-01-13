@@ -12,5 +12,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "twbs/bootstrap": "^4.5"
+    }
 }
