@@ -98,7 +98,7 @@ em {
 
 .sip-nj-background-image-png{
     background: {
-        image: url(../img/bg.png);
+        image: attr('sip-background-image');
         position: center;
         repeat: no-repeat;
         size: cover;
