@@ -78,7 +78,6 @@ em {
   cursor: not-allowed !important; }
 
 .sip-nj-background-image-png {
-  background-image: attr("sip-background-image");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

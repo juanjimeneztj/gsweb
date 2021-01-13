@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.sip-nj-background-image-png').each(function(){
+        $(this).css('background-image','url('+$(this).attr('sip-background-image')+')');
+    });
+});
 // Function to disable button in the SMS forms
 $("body").on('click','.sms-check-checkbox', function() {  
     let srcField = $(this);
