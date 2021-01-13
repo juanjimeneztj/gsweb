@@ -1,10 +1,11 @@
 // Function to disable button in the SMS forms
 $("body").on('click','.sms-check-checkbox', function() {  
-    if($('.sms-check-checkbox').prop('checked')) { 
-        $(this).parent().parent().parent().find('button.btn').removeClass('sms-disabled'); 
-        $(this).parent().parent().parent().find('button.btn').prop('disabled', false);                         
+    let srcField = $(this);
+    if(srcField.prop('checked')) { 
+        srcField.parent().parent().parent().find('button.btn').removeClass('sms-disabled'); 
+        srcField.parent().parent().parent().find('button.btn').prop('disabled', false);                         
     } else {  
-        $(this).parent().parent().parent().find('button.btn').addClass('sms-disabled'); 
-        $(this).parent().parent().parent().find('button.btn').prop('disabled', true); 
+        srcField.parent().parent().parent().find('button.btn').addClass('sms-disabled'); 
+        srcField.parent().parent().parent().find('button.btn').prop('disabled', true); 
     }  
-});   
+});
