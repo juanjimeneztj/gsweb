@@ -137,3 +137,18 @@ em {
         }
     }
 }
+.sip-nj-list-icon-check{
+    padding-left: 0;
+    padding-right: 0;
+    & > li{
+        position: relative;
+        &:before{
+            font-family: 'Font Awesome\ 5 Free';
+            font-weight: bold;
+            left: 0;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+    }
+}

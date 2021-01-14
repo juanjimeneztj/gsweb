@@ -109,3 +109,16 @@ em {
       z-index: 0; }
     .sip-nj-background-image-png.sip-nj-background-overlay-white > * {
       position: relative; }
+
+.sip-nj-list-icon-check {
+  padding-left: 0;
+  padding-right: 0; }
+  .sip-nj-list-icon-check > li {
+    position: relative; }
+    .sip-nj-list-icon-check > li:before {
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: bold;
+      left: 0;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%); }
