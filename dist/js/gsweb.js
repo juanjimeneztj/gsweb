@@ -2,6 +2,11 @@ $(document).ready(function(){
     $('.sip-nj-background-image-png').each(function(){
         $(this).css('background-image','url('+$(this).attr('sip-background-image')+')');
     });
+    $('.sip-nj-of-t1').each(function(ele){
+        let srcField = $(this);
+        srcField.addClass('sip-gsweb-order-form-'+ele);
+        $('head').append('<style>.sip-nj-of-t1.sip-gsweb-order-form-'+ele+':before{ background-image: url('+srcField.attr('sip-nj-img')+');}</style>');
+    });
     $('.sip-nj-list-icon-check').each(function(ele){
         let srcField = $(this);
         srcField.addClass('sip-gsweb-list-'+ele);
