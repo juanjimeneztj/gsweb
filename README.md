@@ -37,6 +37,93 @@ Here is one of the libraries that we use but it may be the one of your preferenc
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
 
-## Custom functions ( WIP )
+## Custom functions
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corrupti pariatur eveniet ab praesentium! Porro soluta provident voluptas ut veritatis eos rem alias maxime quod ab libero, illo voluptate necessitatibus.
+### ---- SMS Form ----
+
+This code and its functions, what they are responsible for is to enable or disable the form button if the specified checkbox has not been checked.
+
+This is an example of a form with this function included:
+
+    <form  action="./"  method="GET"  name="form1"  class="mt-4">
+          <div  class="form-group">
+               <label  class="sms-check-label">
+                     <input  class="form-check-label sms-check-checkbox" 
+                     type="checkbox"  name="checkSMS"  required> I agree to 
+                     receive automated calls, text messages, and prerecorded 
+                     messages about <em>Company_name</em> events, content 
+                     and promotions to the phone number I provide and 
+                     understand consent is not a condition of any purchase.
+                </label>
+           </div>
+           <button  type="submit"  class="btn btn-block btn-lg btn-primary 
+           sms-disabled"  disabled>Submit</button>
+    </form>
+
+It is similar to the structure of a **bootstrap** form but with some additional classes that will help us so that this function can validate these values. The only condition is to use the same level of the structure because if it changes the function may not work correctly.
+
+#### Use
+
+Once we have the structure of the form, we will add the custom class **"sms-check-label"** to our label.
+
+
+    <form  action="./"  method="GET"  name="form1"  class="mt-4">
+          <div  class="form-group">
+               <label  class="sms-check-label">
+                     <input  class="form-check-label" 
+                     type="checkbox"  name="checkSMS"  required> I agree to 
+                     receive automated calls, text messages, and prerecorded 
+                     messages about <em>Company_name</em> events, content 
+                     and promotions to the phone number I provide and 
+                     understand consent is not a condition of any purchase.
+                </label>
+           </div>
+           <button  type="submit"  class="btn btn-block btn-lg btn-primary">
+                 Submit
+           </button>
+    </form>
+
+Once this is done, we proceed to add the class **"sms-check-checkbox"** to the input inside our **label**:
+
+
+    <form  action="./"  method="GET"  name="form1"  class="mt-4">
+          <div  class="form-group">
+               <label  class="sms-check-label">
+                     <input  class="form-check-label sms-check-checkbox" 
+                     type="checkbox"  name="checkSMS"  required> I agree to 
+                     receive automated calls, text messages, and prerecorded 
+                     messages about <em>Company_name</em> events, content 
+                     and promotions to the phone number I provide and 
+                     understand consent is not a condition of any purchase.
+                </label>
+           </div>
+           <button  type="submit"  class="btn btn-block btn-lg btn-primary">
+                 Submit
+           </button>
+    </form>
+
+Finally is to add one more class to our **button** as well as an attribute:
+
+We add the class **"sms-disabled"** to the button of the form and also the attribute **"disabled",** being as follows:
+
+    <form  action="./"  method="GET"  name="form1"  class="mt-4">
+          <div  class="form-group">
+               <label  class="sms-check-label">
+                     <input  class="form-check-label sms-check-checkbox" 
+                     type="checkbox"  name="checkSMS"  required> I agree to 
+                     receive automated calls, text messages, and prerecorded 
+                     messages about <em>Company_name</em> events, content 
+                     and promotions to the phone number I provide and 
+                     understand consent is not a condition of any purchase.
+                </label>
+           </div>
+           <button  type="submit" class="btn btn-block btn-lg btn-primary 
+           sms-disabled" disabled>
+                 Submit
+           </button>
+    </form>
+
+#### Important!!!
+
+This last modification to the button is only if the checkbox is not checked, if you leave the checkbox checked by default, you should skip this last step
+
