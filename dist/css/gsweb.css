@@ -134,3 +134,49 @@ Copyright (c) 2016 Juan jimenez
     @media (max-width: 767px) {
       .sip-nj-of-t1:before {
         bottom: -250px; } }
+
+.sip-nj-pckg-option {
+  background-color: #C8CADC;
+  box-shadow: 0 0 0 var(--primary);
+  transition: all ease-in-out 0.2s; }
+  .sip-nj-pckg-option * {
+    cursor: pointer; }
+  .sip-nj-pckg-option:hover {
+    box-shadow: 0 0 10px var(--primary); }
+  .sip-nj-pckg-option.sip-nj-pckg-option-gold {
+    background: #fef4d6;
+    background: -moz-radial-gradient(center, ellipse cover, #fef4d6 0%, #fad76e 76%, #fad76e 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fef4d6), color-stop(76%, #fad76e), color-stop(100%, #fad76e));
+    background: -webkit-radial-gradient(center, ellipse cover, #fef4d6 0%, #fad76e 76%, #fad76e 100%);
+    background: -o-radial-gradient(center, ellipse cover, #fef4d6 0%, #fad76e 76%, #fad76e 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #fef4d6 0%, #fad76e 76%, #fad76e 100%);
+    background: radial-gradient(ellipse at center, #fef4d6 0%, #fad76e 76%, #fad76e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef4d6', endColorstr='#fad76e', GradientType=1); }
+  .sip-nj-pckg-option ul {
+    padding-left: 20px !important; }
+    .sip-nj-pckg-option ul li {
+      font-size: 16px !important;
+      line-height: 22px !important;
+      list-style-type: disc;
+      padding-bottom: 15px; }
+  .sip-nj-pckg-option.sip-ball {
+    position: relative; }
+    .sip-nj-pckg-option.sip-ball:before {
+      align-items: center;
+      background: #fa0000;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      color: #fff;
+      content: attr(sip-ball-message);
+      display: flex;
+      font-weight: bold;
+      height: 100px;
+      justify-content: center;
+      padding: 15px;
+      position: absolute;
+      right: -25px;
+      text-align: center;
+      top: -25px;
+      transform: rotate(-10deg);
+      width: 100px;
+      z-index: 1; }

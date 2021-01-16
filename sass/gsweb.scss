@@ -162,3 +162,56 @@ Copyright (c) 2016 Juan jimenez
         }
     }
 }
+.sip-nj-pckg-option{
+    background-color: #C8CADC;
+    box-shadow: 0 0 0 var(--primary);
+    transition: all ease-in-out 0.2s;
+    & *{
+        cursor: pointer;
+    }
+    &:hover{
+        box-shadow: 0 0 10px var(--primary);
+    }
+    &.sip-nj-pckg-option-gold{
+        background: rgba(254, 244, 214, 1);
+        background: -moz-radial-gradient(center, ellipse cover, rgba(254, 244, 214, 1) 0%, rgba(250, 215, 110, 1) 76%, rgba(250, 215, 110, 1) 100%);
+        background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(254, 244, 214, 1)), color-stop(76%, rgba(250, 215, 110, 1)), color-stop(100%, rgba(250, 215, 110, 1)));
+        background: -webkit-radial-gradient(center, ellipse cover, rgba(254, 244, 214, 1) 0%, rgba(250, 215, 110, 1) 76%, rgba(250, 215, 110, 1) 100%);
+        background: -o-radial-gradient(center, ellipse cover, rgba(254, 244, 214, 1) 0%, rgba(250, 215, 110, 1) 76%, rgba(250, 215, 110, 1) 100%);
+        background: -ms-radial-gradient(center, ellipse cover, rgba(254, 244, 214, 1) 0%, rgba(250, 215, 110, 1) 76%, rgba(250, 215, 110, 1) 100%);
+        background: radial-gradient(ellipse at center, rgba(254, 244, 214, 1) 0%, rgba(250, 215, 110, 1) 76%, rgba(250, 215, 110, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef4d6', endColorstr='#fad76e', GradientType=1);
+    }
+    & ul{
+        padding-left: 20px!important;
+        & li{
+            font-size: 16px!important;
+            line-height: 22px!important;
+            list-style-type: disc;
+            padding-bottom: 15px;
+        }
+    }
+    &.sip-ball{
+        position: relative;
+        &:before{
+            align-items: center;
+            background: #fa0000;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            border-radius: 50%;
+            color: #fff;
+            content: attr(sip-ball-message);
+            display: flex;
+            font-weight: bold;
+            height: 100px;
+            justify-content: center;
+            padding: 15px;
+            position: absolute;
+            right: -25px;
+            text-align: center;
+            top: -25px;
+            transform: rotate(-10deg);
+            width: 100px;
+            z-index: 1;
+        }
+    }
+}
